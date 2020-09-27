@@ -19,6 +19,7 @@ namespace Comparison
             double powerP = Math.Pow(X2 - X1, 2);
             double powerQ = Math.Pow(Y2 - Y1, 2);
 
+            //Length of line 
             Console.WriteLine(Math.Sqrt(powerP + powerQ));
         }
     }
