@@ -35,13 +35,23 @@ namespace Comparison
             String line2 = Convert.ToString(Line2);
 
             //Checking whether two lines are equal
-            Boolean check = line1.Equals(line2);
+            Boolean equality = line1.Equals(line2);
 
-            if(check == true)
+            if(equality == true)
                 Console.WriteLine("Both the lines are equal.");
             else
                 Console.WriteLine("Lines are not equal.");
 
+            //comparing two lines 
+            double check = line1.CompareTo(line2);
+
+            if(check == 0)
+                Console.WriteLine("Both Lines are equal.");
+            else if(check == -1)
+                Console.WriteLine("Line 1 is smaller that Line 2");
+            else
+                Console.WriteLine("Line 1 is greater than Line 2");
+            
         }
     }
 }
