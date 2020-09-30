@@ -9,6 +9,13 @@ namespace Comparison
         {
             Console.WriteLine("Welcome to Line Comparison Computation Program!");
 
+            Program ComputeLength = new Program();
+            ComputeLength.ComputeLength();
+            
+        }
+
+        public void ComputeLength()
+        {
             Console.WriteLine("Enter the (X,Y) co-ordinates of the first line : ");
 
             double X1 = Convert.ToDouble(Console.ReadLine());
@@ -37,7 +44,7 @@ namespace Comparison
             //Checking whether two lines are equal
             Boolean equality = line1.Equals(line2);
 
-            if(equality == true)
+            if (equality == true)
                 Console.WriteLine("Both the lines are equal.");
             else
                 Console.WriteLine("Lines are not equal.");
@@ -45,13 +52,12 @@ namespace Comparison
             //comparing two lines 
             double check = line1.CompareTo(line2);
 
-            if(check == 0)
+            if (check == 0)
                 Console.WriteLine("Both Lines are equal.");
-            else if(check == -1)
+            else if (check == -1)
                 Console.WriteLine("Line 1 is smaller that Line 2");
             else
                 Console.WriteLine("Line 1 is greater than Line 2");
-            
         }
     }
 }
